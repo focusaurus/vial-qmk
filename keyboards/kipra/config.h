@@ -19,9 +19,9 @@
 // #define I2C1_SCL_PIN GP5
 
 // First I choose the PIO "subsystem" in halconf.h,
-// then we use USART half duplex with a pinout
+// then we use USART full duplex with a pinout
 // that matches what our board supports and
-// how we actually ran traces in kicad
+// how we actually ran traces in ergogen/kicad
 #define SERIAL_USART_FULL_DUPLEX
 #define SERIAL_USART_TX_PIN GP2
 #define SERIAL_USART_RX_PIN GP3

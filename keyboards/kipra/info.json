@@ -24,10 +24,7 @@
         "vid": "0xFEED"
     },
     "split": {
-        "enabled": true,
-        "usb_detect": {
-          "enabled": true
-        }
+        "enabled": true
     },
     "layouts": {
         "LAYOUT_split_l55543r": {

@@ -23,6 +23,6 @@
 // that matches what our board supports and
 // how we actually ran traces in kicad
 #define SERIAL_USART_FULL_DUPLEX
-#define SERIAL_USART_TX_PIN GP4
-#define SERIAL_USART_RX_PIN GP5
+#define SERIAL_USART_TX_PIN GP2
+#define SERIAL_USART_RX_PIN GP3
 #define SERIAL_USART_PIN_SWAP

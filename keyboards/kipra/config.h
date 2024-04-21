@@ -26,3 +26,6 @@
 #define SERIAL_USART_TX_PIN GP2
 #define SERIAL_USART_RX_PIN GP3
 #define SERIAL_USART_PIN_SWAP
+
+// this should speed up bootup
+#define USB_VBUS_PIN GP19

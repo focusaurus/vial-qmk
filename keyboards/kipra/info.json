@@ -24,7 +24,10 @@
         "vid": "0xFEED"
     },
     "split": {
-        "enabled": true
+        "enabled": true,
+        "transport": {
+            "watchdog": true
+        }
     },
     "layouts": {
         "LAYOUT_split_l55543r": {

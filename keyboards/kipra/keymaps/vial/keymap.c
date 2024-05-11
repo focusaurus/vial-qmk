@@ -11,7 +11,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       * │ A │ S │ D │ F │ G │
       * ├───┼───┼───┼───┼───┤
       * │ Z │ X │ C │ V │ B │
-      * └───┴───┴───┴───┴───┘
+      * ├───┼───┼───┼───┤───┘
+      * │GUI│ALT│CTL│SFT│
+      * └───┴───┴───┴───┘
       *               ┌───┐
       *               │GUI├───┐
       *               └───┤Bsp├───┐
@@ -23,24 +25,26 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       * │ H │ J │ K │ L │ ; │
       * ├───┼───┼───┼───┼───┤
       * │ N │ M │ , │ . │ / │
-      * └───┴───┴───┴───┴───┘
+      * └───┼───┼───┼───┼───┤
+      *     │SFT│CTL│ALT│GUI│
+      *     └───┴───┴───┴───┘
       *           ┌───┐
       *       ┌───┤Alt│
       *   ┌───┤   ├───┘
       *   │Ent├───┘
       *   └───┘
       */
-    [0] = LAYOUT_split_4x5_3(
+    [0] = LAYOUT_split_l55543r(
 KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,
 KC_A,    KC_S,    KC_D,    KC_F,    KC_G,
 KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,
 KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT,
-KC_LGUI, KC_BSPC, KC_SPC,
+KC_1, KC_2, KC_3,
 
 KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,
 KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,
 KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,
          KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI,
-                  KC_ENT,  KC_SPC,  KC_RALT
+                           KC_3, KC_2, KC_1
     )
 };
